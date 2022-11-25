@@ -1,26 +1,29 @@
 <script>
-import AppShops from '../components/AppShops.vue';
-import AppContent from '../components/AppContent.vue';
+import AppShops from "../components/AppShops.vue";
+import AppContent from "../components/AppContent.vue";
+import AppHero from "../components/AppHero.vue";
 
 export default {
-  name:"AppMain",
+  name: "AppMain",
   components: {
     AppShops,
-    AppContent
-  }
-}
+    AppContent,
+    AppHero,
+  },
+};
 </script>
 
 <template>
-    <main>
-        <AppContent/>
-        <AppShops/>
-    </main>
+  <main>
+    <AppHero />
+    <AppContent />
+    <AppShops />
+  </main>
 </template>
 
 <style scoped lang="scss">
-main{
-    background-color: black;
-    color: white;
+main {
+  background-color: black;
+  color: white;
 }
 </style>

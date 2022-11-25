@@ -32,7 +32,7 @@ export default {
 
 <template>
   <section class="shops">
-    <div class="container">
+    <div class="container-flex">
       <div class="shop" v-for="shop in shops">
         <img :src="shop.img" :alt="shop.title" />
         <span>{{ shop.title }}</span>

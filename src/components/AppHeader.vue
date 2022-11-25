@@ -1,9 +1,9 @@
 <script>
 export default {
-  name:"AppHeader",
+  name: "AppHeader",
   data() {
     return {
-      links:[
+      links: [
         "CHARACTERS",
         "COMICS",
         "MOVIES",
@@ -13,38 +13,38 @@ export default {
         "VIDEOS",
         "FANS",
         "NEWS",
-        "SHOP"
-      ]
-    }
-  }
-}
+        "SHOP",
+      ],
+    };
+  },
+};
 </script>
 
 <template>
   <header>
-    <div class="container">
-      <img src="../assets/dc-logo.png" alt="Logo DC">
+    <div class="container-flex">
+      <img src="../assets/dc-logo.png" alt="Logo DC" />
       <ul>
-        <li v-for="link in links"><a href="#">{{link}}</a></li>
+        <li v-for="link in links">
+          <a href="#">{{ link }}</a>
+        </li>
       </ul>
     </div>
   </header>
 </template>
 
 <style scoped lang="scss">
-img{
+img {
   padding: 1rem;
 }
-ul{
+ul {
   display: flex;
   list-style: none;
-  a{
+  a {
     text-decoration: none;
     display: inline-block;
-    padding:1.25rem ;
+    padding: 1.25rem;
     color: black;
   }
 }
 </style>
-
-
